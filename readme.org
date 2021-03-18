@@ -1,6 +1,9 @@
 git clone git@github.com:jsbhat/cluster-notebooks.git
+
 pyenv virtualenv 3.8.2 cluster-notebooks
-poetry init
 pip install --upgrade pip setuptools wheel
+poetry init
 poetry add pyarrow scikit-learn pandas numpy seaborn jupyterlab
 poetry add --dev ipython --dev pudb
+
+poetry install -vvv
